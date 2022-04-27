@@ -20,7 +20,7 @@ class Form extends React.Component {
                     />
                 </div>
                 <div className={style.field}>
-                    <label className={style.field__tittle} htmlFor='time'>
+                    <label className={style.field__tittle}   htmlFor='time'>
                         Tempo
                     </label>
                     <input
@@ -34,7 +34,7 @@ class Form extends React.Component {
                         required
                     />
                 </div>
-                <Button />
+                <Button>Adicionar</Button>
             </form>
         )
     }
