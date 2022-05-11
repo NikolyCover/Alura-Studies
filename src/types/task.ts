@@ -1,4 +1,4 @@
-export interface Itask {
+export interface iTask {
     task: string,
     time: string,
     selected: boolean,

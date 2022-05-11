@@ -1,11 +1,11 @@
 import React from 'react'
-import { Itask } from '../../types/task'
+import { iTask } from '../../types/task'
 import Button from '../Button'
 import style from './Form.module.scss'
 import { v4 as uuidv4} from 'uuid'
 
 class Form extends React.Component<{
-    setTasks: React.Dispatch<React.SetStateAction<Itask[]>>
+    setTasks: React.Dispatch<React.SetStateAction<iTask[]>>
 }> {
     state = {
         task: '',
