@@ -4,13 +4,14 @@ import style from './Button.module.scss'
 interface Props{
     children: React.ReactChild
     type?: 'button' | 'submit' | 'reset' | undefined
+    onClick?: () => void
 }
 
 class Button extends React.Component<Props> {
     render() {
-        const {type = 'button'} = this.props
+        const {type = 'button', onClick} = this.props
         return (
-            <button type={type} className={style.button}>
+            <button onClick={onClick} type={type} className={style.button}>
                 {this.props.children}
             </button>
         )
